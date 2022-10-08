@@ -1,0 +1,141 @@
+$date
+   Fri Oct  7 20:35:33 2022
+$end
+$version
+  2022.1
+$end
+$timescale
+  1ps
+$end
+$scope module tb_comparator_1b $end
+$var wire 1 ! less_or_eq $end
+$var reg 1 " A $end
+$var reg 1 # B $end
+$var integer 32 $ i [31:0] $end
+$var integer 32 % total_point [31:0] $end
+$scope module uut $end
+$var wire 1 & A $end
+$var wire 1 ' B $end
+$var wire 1 ! less_or_eq $end
+$scope module g1 $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 * c $end
+$var wire 1 + d $end
+$var wire 1 ' s0 $end
+$var wire 1 & s1 $end
+$var wire 1 ! out $end
+$var wire 1 , e $end
+$var wire 1 - f $end
+$var wire 1 . w1 $end
+$var wire 1 / w2 $end
+$var wire 1 0 w3 $end
+$var wire 1 1 w4 $end
+$var wire 1 2 w5 $end
+$var wire 1 3 w6 $end
+$var wire 1 4 w7 $end
+$var wire 1 5 w8 $end
+$var wire 1 6 w9 $end
+$var wire 1 7 w10 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+x"
+x#
+bx $
+b0 %
+x&
+x'
+1(
+1)
+0*
+1+
+x,
+x-
+x.
+x/
+00
+x1
+x2
+x3
+04
+x5
+x6
+x7
+$end
+#50000
+1!
+0"
+0#
+b0 $
+0&
+0'
+1,
+1-
+1.
+1/
+00
+01
+12
+03
+04
+05
+16
+07
+#100000
+0!
+1"
+b1 $
+b1 %
+1&
+0,
+0.
+0/
+00
+11
+02
+03
+05
+06
+#150000
+1!
+0"
+1#
+b10 $
+b10 %
+0&
+1'
+1,
+0-
+1.
+1/
+00
+01
+02
+13
+04
+05
+16
+07
+#200000
+1"
+b11 $
+b11 %
+1&
+0,
+0.
+0/
+00
+11
+02
+03
+15
+06
+17
+#250000
+b100 $
+b100 %

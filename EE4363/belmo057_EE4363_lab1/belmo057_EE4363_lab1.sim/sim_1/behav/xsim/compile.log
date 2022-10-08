@@ -1,6 +1,12 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryan/Documents/school/Fall2022/EE4363/belmo057_EE4363_lab1/belmo057_EE4363_lab1.srcs/sources_1/imports/EE4363/mux_16to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux16to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryan/Documents/school/Fall2022/EE4363/belmo057_EE4363_lab1/belmo057_EE4363_lab1.srcs/sources_1/imports/EE4363/tb_comparator_1b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_comparator_1b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryan/Documents/school/Fall2022/EE4363/belmo057_EE4363_lab1/belmo057_EE4363_lab1.srcs/sources_1/imports/EE4363/comparator_1b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator_1b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryan/Documents/school/Fall2022/EE4363/belmo057_EE4363_lab1/belmo057_EE4363_lab1.srcs/sources_1/imports/EE4363/tb_mux4to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mux4to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryan/Documents/school/Fall2022/EE4363/belmo057_EE4363_lab1/belmo057_EE4363_lab1.srcs/sources_1/imports/EE4363/comparator_4b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator_4b
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryan/Documents/school/Fall2022/EE4363/belmo057_EE4363_lab1/belmo057_EE4363_lab1.srcs/sources_1/imports/EE4363/mux_4to1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mux4to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryan/Documents/school/Fall2022/EE4363/belmo057_EE4363_lab1/belmo057_EE4363_lab1.srcs/sources_1/imports/EE4363/tb_mux16to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_mux16to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryan/Documents/school/Fall2022/EE4363/belmo057_EE4363_lab1/belmo057_EE4363_lab1.srcs/sources_1/imports/EE4363/tb_comparator_4b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_comparator_4b
