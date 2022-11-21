@@ -1,0 +1,32 @@
+ijmp 0 6 -10
+lw 19 106(17)
+cdec 18 0 23
+cdec 14 0 24
+or 30 6 28
+cdec 8 0 12
+ijmp 0 7 29
+cdec 3 0 3
+ijmp 0 19 37
+sllv 14 0 6
+sllv 5 0 1
+sw 5 0(26)
+sw 24 82(23)
+ijmp 0 20 55
+lw 3 103(13)
+lw 22 122(20)
+lw 2 42(20)
+lw 5 32(28)
+lw 3 87(30)
+cdec 19 0 13
+cdec 16 0 29
+cdec 9 0 16
+ijmp 0 22 89
+ijmp 0 28 82
+ijmp 0 16 84
+sw 15 99(18)
+lw 2 39(12)
+cdec 19 0 28
+and 20 20 26
+ijmp 0 27 104
+cdec 27 0 29
+cdec 27 0 3

@@ -6,9 +6,9 @@ module comparator_4b(A, B, less_or_eq);
     output less_or_eq;
     wire w1, w2, w3;
     
-    comparator_1b g1(A[3],B[3],w1);
-    comparator_1b g2(A[2],B[2],w2);
-    comparator_1b g3(A[1],B[1],w3);
-    comparator_1b g4(A[0],B[0],less_or_eq);
+    mux4to1 g1(w1, 1, 0, 1, 1, A[0], B[0]);
+    mux4to1 g2(w2, w1, 0, 1, w1, A[1], B[1]);
+    mux4to1 g3(w3, w2, 0, 1, w2, A[2], B[2]);
+    mux4to1 g4(less_or_eq , w3, 0, 1, w3, A[3], B[3]);
     
 endmodule

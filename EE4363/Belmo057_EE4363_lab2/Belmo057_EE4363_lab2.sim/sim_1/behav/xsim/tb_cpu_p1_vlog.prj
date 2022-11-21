@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Belmo057_EE4363_lab2.srcs/sources_1/imports/handout/control.sv" \
+"../../../../Belmo057_EE4363_lab2.srcs/sources_1/imports/handout/cpu.sv" \
+"../../../../Belmo057_EE4363_lab2.srcs/sources_1/imports/handout/decode.sv" \
+"../../../../Belmo057_EE4363_lab2.srcs/sources_1/imports/handout/execute.sv" \
+"../../../../Belmo057_EE4363_lab2.srcs/sources_1/imports/handout/fetch.sv" \
+"../../../../Belmo057_EE4363_lab2.srcs/sources_1/imports/handout/forward.sv" \
+"../../../../Belmo057_EE4363_lab2.srcs/sources_1/imports/handout/mem.sv" \
+"../../../../Belmo057_EE4363_lab2.srcs/sources_1/imports/handout/prc.sv" \
+"../../../../Belmo057_EE4363_lab2.srcs/sources_1/imports/handout/wb.sv" \
+"../../../../Belmo057_EE4363_lab2.srcs/sources_1/imports/handout/tb_cpu.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

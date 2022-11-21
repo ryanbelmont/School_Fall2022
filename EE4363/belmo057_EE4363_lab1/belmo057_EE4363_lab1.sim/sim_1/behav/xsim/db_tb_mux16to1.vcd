@@ -1,5 +1,5 @@
 $date
-   Fri Oct  7 19:36:38 2022
+   Tue Oct 11 20:25:40 2022
 $end
 $version
   2022.1
@@ -111,21 +111,21 @@ $var wire 1 ) a $end
 $var wire 1 * b $end
 $var wire 1 + c $end
 $var wire 1 , d $end
-$var wire 1 1 s0 $end
-$var wire 1 o s1 $end
+$var wire 1 o s0 $end
+$var wire 1 p s1 $end
 $var wire 1 " out $end
-$var wire 1 p e $end
-$var wire 1 q f $end
-$var wire 1 r w1 $end
-$var wire 1 s w2 $end
-$var wire 1 t w3 $end
-$var wire 1 u w4 $end
-$var wire 1 v w5 $end
-$var wire 1 w w6 $end
-$var wire 1 x w7 $end
-$var wire 1 y w8 $end
-$var wire 1 z w9 $end
-$var wire 1 { w10 $end
+$var wire 1 q e $end
+$var wire 1 r f $end
+$var wire 1 s w1 $end
+$var wire 1 t w2 $end
+$var wire 1 u w3 $end
+$var wire 1 v w4 $end
+$var wire 1 w w5 $end
+$var wire 1 x w6 $end
+$var wire 1 y w7 $end
+$var wire 1 z w8 $end
+$var wire 1 { w9 $end
+$var wire 1 | w10 $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -223,6 +223,7 @@ xx
 xy
 xz
 x{
+x|
 $end
 #10000
 0"
@@ -302,9 +303,9 @@ b0 (
 0m
 0n
 0o
-1p
+0p
 1q
-0r
+1r
 0s
 0t
 0u
@@ -314,6 +315,7 @@ b0 (
 0y
 0z
 0{
+0|
 #20000
 b1 $
 b1 %
@@ -350,6 +352,7 @@ b1 (
 0j
 0l
 0o
+0p
 #30000
 1"
 b10 $
@@ -406,16 +409,14 @@ b10 (
 0l
 1m
 0o
-0q
-1r
+0p
 1s
-0t
+1t
 0u
 0v
 1w
 0x
-0y
-1z
+1{
 #40000
 b11 $
 b11 %
@@ -463,6 +464,7 @@ b11 (
 0m
 1n
 0o
+0p
 #50000
 0"
 b100 $
@@ -521,7 +523,6 @@ b100 (
 0n
 1o
 0p
-1q
 0r
 0s
 0t
@@ -568,6 +569,7 @@ b101 (
 0j
 0l
 1o
+0p
 #70000
 1"
 b110 $
@@ -624,15 +626,13 @@ b110 (
 0l
 1m
 1o
-0q
-0r
-0s
+0p
+1s
 1t
-1u
+0u
 0v
 0w
-0x
-1y
+1x
 1{
 #80000
 b111 $
@@ -681,6 +681,7 @@ b111 (
 0m
 1n
 1o
+0p
 #90000
 0"
 b1000 $
@@ -739,8 +740,8 @@ b1000 (
 0n
 0o
 1p
-1q
-0r
+0q
+1r
 0s
 0t
 0u
@@ -750,6 +751,7 @@ b1000 (
 0y
 0z
 0{
+0|
 #100000
 b1001 $
 b1001 %
@@ -786,6 +788,7 @@ b1001 (
 0j
 0l
 0o
+1p
 #110000
 1"
 b1010 $
@@ -842,16 +845,14 @@ b1010 (
 0l
 1m
 0o
-0q
-1r
-1s
+1p
+0s
 0t
-0u
-0v
-1w
-0x
-0y
-1z
+1u
+1v
+1y
+0z
+1|
 #120000
 b1011 $
 b1011 %
@@ -899,6 +900,7 @@ b1011 (
 0m
 1n
 0o
+1p
 #130000
 0"
 b1100 $
@@ -956,8 +958,7 @@ b1100 (
 0l
 0n
 1o
-0p
-1q
+1p
 0r
 0s
 0t
@@ -967,7 +968,7 @@ b1100 (
 0x
 0y
 0z
-0{
+0|
 #140000
 b1101 $
 b1101 %
@@ -1004,6 +1005,7 @@ b1101 (
 0j
 0l
 1o
+1p
 #150000
 1"
 b1110 $
@@ -1060,16 +1062,14 @@ b1110 (
 0l
 1m
 1o
-0q
-0r
+1p
 0s
-1t
+0t
 1u
-0v
-0w
-0x
-1y
-1{
+1v
+0y
+1z
+1|
 #160000
 b1111 $
 b1111 %
@@ -1117,6 +1117,7 @@ b1111 (
 0m
 1n
 1o
+1p
 #170000
 b10000 %
 b1000 &
