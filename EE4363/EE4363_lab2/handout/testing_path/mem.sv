@@ -30,9 +30,7 @@ module mem(
               else if (EXMEMop == SW) CPU.DMemory[EXMEMALUOut>>2] <= EXMEMB; //Store
               else if (EXMEMop == CDEC) begin
                             // TODO ... Update MEMWBValue with EXMEMALUOut
-                            MEMWBValue <= EXMEMALUOut;
                             // TODO ... Pass along the EXMEMFlagOut to MemWBFlagOut
-                            MEMWBFlagOut <= EXMEMFlagOut;
                    end
               else if (EXMEMop == IJMP) begin ; end // Do nothing
                            

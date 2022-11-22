@@ -16,7 +16,6 @@ module fetch(
     always @(posedge clk) begin
           if (ijmpMem) begin 
                              //TODO ... inject NOP
-             IFIDIR <= no_op;
           end
           else if (stall) begin
              IFIDIR <= IFIDIR;

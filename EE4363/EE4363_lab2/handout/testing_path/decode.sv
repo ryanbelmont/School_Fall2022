@@ -24,9 +24,7 @@ module decode(
     always @(posedge clk)begin
         if (stall | ijmpMem) begin // the first three pipeline stages stall if there is a load hazard
                   //TODO inject NOPs
-                 IDEXIR <= no_op; 
-                 IDEXA = no_op;
-                 IDEXB = no_op; 
+                 
                  
               end
               else begin

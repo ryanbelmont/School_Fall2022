@@ -17,7 +17,6 @@ module prc(
     begin
         if (ijmpMem) begin 
                //TODO ... update the PC value
-               PC <= ijmpPCValue;
           end
           else if (stall) begin // if there is a Load Use Hazard, then stall
              PC <= PC;
