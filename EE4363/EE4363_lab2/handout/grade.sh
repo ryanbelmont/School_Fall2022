@@ -1,5 +1,5 @@
 #!/bin/bash
-VIVADO_PATH=/soft/Vivado_Webpack/Vivado_Webpack/Vivado/2020.2/bin
+VIVADO_PATH=/tools/Xilinx/Vivado/2022.1/bin
 CURPATH=`pwd`
 score=0
 

@@ -28,7 +28,6 @@ module execute(
  assign IDEXop = IDEXIR[31:26];
     
  forward FWDTOEX(
-     .clk(clk),
      .bypassAfromMEM(bypassAfromMEM),
      .bypassAfromALUinWB(bypassAfromALUinWB),
      .bypassAfromLWinWB(bypassAfromLWinWB),

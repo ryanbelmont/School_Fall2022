@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryan/Documents/school/Fall2022/EE4363/EE4363_lab2/handout/testing_path/parameters.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryan/Documents/school/Fall2022/EE4363/EE4363_lab2/handout/testing_path/control.sv" into library work
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryan/Documents/school/Fall2022/EE4363/EE4363_lab2/handout/testing_path/decode.sv" into library work
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryan/Documents/school/Fall2022/EE4363/EE4363_lab2/handout/testing_path/fetch.sv" into library work
+INFO: [VRFC 10-311] analyzing module fetch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryan/Documents/school/Fall2022/EE4363/EE4363_lab2/handout/testing_path/forward.sv" into library work
+INFO: [VRFC 10-311] analyzing module forward
+ERROR: [VRFC 10-2989] 'a' is not declared [/home/ryan/Documents/school/Fall2022/EE4363/EE4363_lab2/handout/testing_path/forward.sv:19]
+ERROR: [VRFC 10-2989] 'b' is not declared [/home/ryan/Documents/school/Fall2022/EE4363/EE4363_lab2/handout/testing_path/forward.sv:22]
+ERROR: [VRFC 10-8530] module 'forward' is ignored due to previous errors [/home/ryan/Documents/school/Fall2022/EE4363/EE4363_lab2/handout/testing_path/forward.sv:3]

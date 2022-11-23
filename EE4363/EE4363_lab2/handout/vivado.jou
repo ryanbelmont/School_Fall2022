@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Nov 22 20:28:45 2022
+# Process ID: 24842
+# Current directory: /home/ryan/Documents/school/Fall2022/EE4363/EE4363_lab2/handout
+# Command line: vivado
+# Log file: /home/ryan/Documents/school/Fall2022/EE4363/EE4363_lab2/handout/vivado.log
+# Journal file: /home/ryan/Documents/school/Fall2022/EE4363/EE4363_lab2/handout/vivado.jou
+# Running On: ryan-System-Product-Name, OS: Linux, CPU Frequency: 2200.000 MHz, CPU Physical cores: 16, Host memory: 16676 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/ryan/Documents/school/Fall2022/EE4363/Belmo057_EE4363_lab2/Belmo057_EE4363_lab2.xpr
+update_compile_order -fileset sources_1
+close_project

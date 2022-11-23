@@ -1,0 +1,5 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab -debug typical tb_cpu_p1 -s top_sim 
+Multi-threading is on. Using 14 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit work.tb_cpu_p1 in library work located at xsim.dir/work.

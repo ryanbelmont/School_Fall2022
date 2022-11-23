@@ -20,9 +20,10 @@ module wb(
                 begin
                    CPU.Regs[MEMWBIR[20:16]] <= MEMWBValue; // Load operation
                 end
-          else if ( MEMWBop == CDEC ) if (MEMWBFlagOut == 1) begin
-                                                    // TODO ... update register file using MEMWBValue
-                                      end
+          else if ( MEMWBop == CDEC ) if (MEMWBFlagOut == 1) 
+                begin                     // TODO ... update register file using MEMWBValue
+                   CPU.Regs[MEMWBIR[15:11]] <= MEMWBValue;
+                end
           else if ( MEMWBop == IJMP ) begin ;  end // Do nothing
    end
 endmodule

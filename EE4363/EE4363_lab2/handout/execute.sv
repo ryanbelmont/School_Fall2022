@@ -64,6 +64,22 @@ module execute(
                        32: begin
                               EXMEMALUOut <= Ain + Bin;  //add operation
                            end
+                           
+                       37: begin        //or operation
+                              EXMEMALUOut <= (Ain | Bin);
+                           end
+                           
+                       36: begin        // And op
+                              EXMEMALUOut <= (Ain & Bin);
+                           end
+                           
+                       42: begin        // SLT op
+                              EXMEMALUOut <= (Ain < Bin);
+                           end
+                           
+                       4: begin        // SLLV op
+                              EXMEMALUOut <= (Bin << Ain);
+                           end
                                                   //TODO ... add cases for SLLV, AND, OR, SLT 
                        default: ; //other R-type operations: subtract, SLT, etc.
                      endcase
@@ -73,15 +89,19 @@ module execute(
                          //$display("The CDEC instruction, Ain is %d, Bin is %d", Ain, Bin );
                          if (Ain > 0) begin 
                              //TODO ... Assign Bin to EXMEMALUOut
+                             EXMEMALUOut <= Ain-Bin;
                              //TODO .. Assign 1 to EXMEMFlagOut
+                             EXMEMFlagOut <= 1;
                          end
                          else begin
                              //TODO .. Assign 0 to the EXMEMFlagOut
+                             EXMEMFlagOut <= 0;
                          end  
                          EXMEMIR <= IDEXIR; //pass along the IR & B register
               end           
               else if (IDEXop==IJMP) begin
                              //TODO ... Compute Ain - Bin, assign to EXMEMALUOut
+                         EXMEMALUOut <= Ain + Bin + IDEXIR[15:0];
                          EXMEMIR <= IDEXIR; //pass along the IR & B register
               end
        end

@@ -1,7 +1,6 @@
 `timescale 1ns / 1ps
  
 module forward(
-    input clk,
     input bypassAfromMEM,
     input bypassAfromALUinWB,
     input bypassAfromLWinWB,
@@ -14,56 +13,24 @@ module forward(
     input [31:0] EXMEMALUOut,
     output reg [31:0] Ain,
     output reg [31:0] Bin
-    );
+    ); 
     
-   // TODO ...  assign the correct values to Ain, forwarding if needed   
-   always @ (posedge clk)
-   begin
-        if (bypassAfromMEM)
-        begin
-            Ain <= EXMEMALUOut;
-        end
-        
-        else if (bypassAfromALUinWB)
-        begin
-            Ain <= MEMWBValue;
-        end
-        
-        else if (bypassAfromLWinWB)
-        begin
-            Ain <= MEMWBValue;
-        end
-        
-        else
-        begin
-            assign Ain = IDEXA;
-        end
-   end 
-   // assign Ain = IDEXA;
-
-   // TODO ...  assign the correct values to Ain, forwarding if needed    
-   always @ (posedge clk)
-   begin
-        if (bypassBfromMEM)
-        begin
-            Bin <= EXMEMALUOut;
-        end
-        
-        else if (bypassBfromALUinWB)
-        begin
-            Bin <= MEMWBValue;
-        end
-        
-        else if (bypassBfromLWinWB)
-        begin
-            Bin <= MEMWBValue;
-        end
-        
-        else
-        begin
-            assign Bin = IDEXB;
-        end
-   end 
-   // assign Bin = IDEXB;
+    assign Ain = ((bypassAfromALUinWB | bypassAfromLWinWB) ?  MEMWBValue : IDEXA);
+    assign Ain = (bypassAfromMEM  ? EXMEMALUOut: a);
+    
+    assign Bin = ((bypassBfromALUinWB | bypassBfromLWinWB) ? MEMWBValue : IDEXB);
+    assign Bin = (bypassBfromMEM  ? EXMEMALUOut : b);
+    
+    
+    //assign a = ((bypassAfromALUinWB | bypassAfromLWinWB) ? MEMWBValue  : IDEXA);
+    //assign Ain = (bypassAfromMEM  ? EXMEMALUOut : a);
+    
+    //assign b = ((bypassBfromALUinWB | bypassBfromLWinWB) ? MEMWBValue  : IDEXB);
+    //assign Bin = (bypassBfromMEM  ? EXMEMALUOut : b);
+    
+      //assign Ain = (select[0] ? b : a);
+   
+   //assign Ain = (bypassAfromMEM ? EXMEMALUOut : ((bypassAfromALUinWB | bypassAfromLWinWB) ? MEMWBValue : IDEXA));
+   //assign Bin = (bypassBfromMEM ? EXMEMALUOut : ((bypassBfromALUinWB | bypassBfromLWinWB) ? MEMWBValue : IDEXB));
                
 endmodule
